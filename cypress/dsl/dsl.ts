@@ -1,6 +1,6 @@
-type assertionLambda = (...args) => void
+type assertionLambda = () => void
 class Dsl {
-  veriify(assertions: assertionLambda | assertionLambda[]) {
+  verify(assertions: assertionLambda | assertionLambda[]) {
     if (assertions instanceof Array) {
       assertions.forEach((assertion) => assertion())
     } else {
@@ -10,7 +10,7 @@ class Dsl {
   }
 
   openToDoApp() {
-    cy.visit('https://example.cypress.io')
+    cy.visit('/')
     return this
   }
 }
