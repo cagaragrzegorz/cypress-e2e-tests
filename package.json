@@ -4,12 +4,15 @@
   "description": "E2E tests for todo list",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "format": "node_modules/.bin/prettier --write .",
+    "check": "node_modules/.bin/prettier --check ."
   },
   "author": "Grzegorz Cagara",
   "license": "MIT",
   "devDependencies": {
     "cypress": "^13.3.1",
+    "prettier": "3.0.3",
     "typescript": "^5.2.2"
   }
 }
