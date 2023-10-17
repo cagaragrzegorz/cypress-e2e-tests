@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "E2E tests for todo list",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "author": "Grzegorz Cagara",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.3.1",
+    "typescript": "^5.2.2"
+  }
 }
