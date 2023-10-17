@@ -1,5 +1,7 @@
+import dsl from '../dsl/dsl'
+
 describe('template spec', () => {
   it('passes', () => {
-    cy.visit('https://example.cypress.io')
+    dsl.openToDoApp()
   })
 })
