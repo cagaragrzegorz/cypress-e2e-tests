@@ -1,5 +1,8 @@
 import dsl from '../../dsl/dsl'
-import { checkIfTitleIsDisplayed, checkIfUserLandsOnProperUrl } from '../checks/common'
+import {
+  checkIfTitleIsDisplayed,
+  checkIfUserLandsOnProperUrl,
+} from '../checks/common'
 
 describe('app has basic functionality', () => {
   it('should load', () => {
